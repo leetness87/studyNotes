@@ -1,0 +1,41 @@
+public class RatesMultipleArrays {
+	public static void main(String[] args) {
+		GTerm gt = new GTerm(700, 600);
+		// added table to window with headings to suit the following variables
+		gt.addTable(700, 600,
+				"Name\tGender\tBirth Year\tHourly Rate\tTerms Accepted");
+		gt.setFontSize(16);
+		gt.setFontColor(16, 50, 64);
+		// Initialization of a double for averaging sum
+		double hourlyRateAvg = 0;
+		// to comply with 5b a counter initialization and the input required to have a
+		// counter end
+		int i = 0;
+		int numberStaff = Integer.parseInt(gt.getInputString("How many staff members do you have?"));
+		// while statement that is nested with others the the program inside will run
+		// until the counter has met its requirements
+		while (i < numberStaff) {
+			// inputs to an array that will be worked off for the following
+			String[] name;
+			char[] gender;
+			int[] birthYear;
+			double[] hourlyRate;
+			Boolean[] terms;
+			name = new String[numberStaff];
+			gender = new char[numberStaff];
+			birthYear = new int[numberStaff];
+			hourlyRate = new double[numberStaff];
+			terms = new Boolean[numberStaff];
+
+			i++;
+		}
+		// an output of the average in the table under the hourly rates
+		if (numberStaff == i) {
+			gt.addRowToTable(0, "\t\t\t"+ (hourlyRateAvg / numberStaff));
+
+		}
+		gt.setXY(100, 500);
+		gt.showHelp();
+		// bob,m,2000,50,True
+	}
+}

@@ -1,0 +1,23 @@
+
+public class Testing {
+
+	public static void main(String[] args) {
+		GTerm gt = new GTerm(700, 600);
+		gt.setXY(1, 1);
+		gt.setFontSize(16);
+		gt.setFontColor(16, 50, 64);
+		gt.setBackgroundColor(168, 84, 50);
+		int iCounter = 1;
+		int iTotal = 5;
+		String name = gt.getInputString("enter name");
+		while (iCounter != iTotal) {
+			if (name.contentEquals("")) {
+				name = gt.getInputString("invalid please try again") + iCounter+1;
+					}
+		}
+		gt.println ("your name is " + name);
+		gt.showHelp();
+
+	}
+
+}

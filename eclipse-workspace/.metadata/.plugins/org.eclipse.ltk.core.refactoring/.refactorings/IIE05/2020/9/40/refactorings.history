@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;HourlyRatesWhileLoops&apos; to &apos;RatesMultipleArrays&apos;&#x0D;&#x0A;- Original project: &apos;IIE05&apos;&#x0D;&#x0A;- Original element: &apos;HourlyRatesWhileLoops&apos;&#x0D;&#x0A;- Renamed element: &apos;RatesMultipleArrays&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HourlyRatesWhileLoops&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{HourlyRatesWhileLoops.java[HourlyRatesWhileLoops" matchStrategy="1" name="RatesMultipleArrays" qualified="false" references="true" similarDeclarations="false" stamp="1601282617909" textual="false" version="1.0"/>
+</session>

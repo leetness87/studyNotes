@@ -1,0 +1,19 @@
+import java.util.*;
+public class dumb {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	double weight, height;
+	double weightMIN = 000, weightMAX = 999, heightMIN = 0.1, heightMAX = 2;
+	
+	System.out.print("enter weight:");
+	weight = input.nextDouble();
+	while (weight < weightMIN && weight < weightMAX)
+	{System.out.print("error");
+		weight = input.nextDouble();
+	}
+	
+
+	}
+
+}

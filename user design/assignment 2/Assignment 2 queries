@@ -1,0 +1,40 @@
+SELECT *
+  FROM interest
+ WHERE descrip IS NULL;
+
+SELECT DISTINCT instname
+  FROM department
+ WHERE state = 'NSW' OR 
+       state = 'WA'
+ ORDER BY instname DESC;
+
+SELECT title,
+       count( * ) AS COUNT
+  FROM field
+ GROUP BY title
+HAVING count( * ) > 1;
+
+SELECT a1.ACNUM,
+       a1.FAMNAME,
+       a1.GIVENAME
+  FROM academic a1
+       JOIN
+       author a2 ON a1.ACNUM = a2.ACNUM
+       JOIN
+       paper p1 ON a2.panum = p1.panum
+ WHERE p1.title LIKE '%spline%';
+;
+       
+
+SELECT d1.instname,
+       d1.deptname
+  FROM department d1
+       LEFT JOIN
+       academic a1 ON d1.deptnum = a1.deptnum
+ WHERE a1.deptnum IS NULL AND 
+       d1.state IS 'Qld' OR 
+       'QLD';
+;
+
+
+ 

@@ -1,0 +1,22 @@
+SupervisedTour
+1
+TREE WALK
+75.4
+5
+10
+Walk tree tops
+Flying Fox through trees
+Sight Seeing
+Repel from Tall Trees
+
+UnsupervisedTour
+2
+KAYAKING
+40.75
+0
+3
+Get kayak from centre
+Enjoy the rivers
+Make sure you dont get lost
+Return by 1500
+
